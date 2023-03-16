@@ -20,6 +20,7 @@
         <module>hw_001</module>
         <module>hw_002</module>
         <module>hw_003</module>
+        <module>hw_005</module>
     </modules>
 
     <properties>
@@ -34,6 +35,7 @@
         <opencsv.version>5.6</opencsv.version>
         <maven-surefire-plugin.version>3.0.0-M6</maven-surefire-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+        <spring-shell-starter.version>2.0.1.RELEASE</spring-shell-starter.version>
     </properties>
 
     <dependencies>
@@ -76,6 +78,11 @@
                 <groupId>com.opencsv</groupId>
                 <artifactId>opencsv</artifactId>
                 <version>${opencsv.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.shell</groupId>
+                <artifactId>spring-shell-starter</artifactId>
+                <version>${spring-shell-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
