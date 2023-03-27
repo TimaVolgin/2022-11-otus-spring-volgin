@@ -34,15 +34,8 @@ class BookRepositoryJpaTest {
         Book expectedBook = Book.builder()
                 .title("Дон Жуан")
                 .published(LocalDate.now())
-                .genre(Genre.builder()
-                        .id(5L)
-                        .name("Трагедия")
-                        .build())
-                .author(Author.builder()
-                        .id(3L)
-                        .fio("Толстой Алексей Константинович")
-                        .birthday(LocalDate.parse("1817-09-05"))
-                        .build())
+                .genre(em.find(Genre.class, 5L))
+                .author(em.find(Author.class, 3L))
                 .build();
         bookRepositoryJpa.saveOrUpdate(expectedBook);
         Optional<Book> actualBook = bookRepositoryJpa.findById(expectedBook.getId());
@@ -57,15 +50,8 @@ class BookRepositoryJpaTest {
                 .id(7L)
                 .title("Дон Жуан")
                 .published(LocalDate.now())
-                .genre(Genre.builder()
-                        .id(5L)
-                        .name("Трагедия")
-                        .build())
-                .author(Author.builder()
-                        .id(3L)
-                        .fio("Толстой Алексей Константинович")
-                        .birthday(LocalDate.parse("1817-09-05"))
-                        .build())
+                .genre(em.find(Genre.class, 5L))
+                .author(em.find(Author.class, 3L))
                 .build();
         bookRepositoryJpa.saveOrUpdate(expectedBook);
         Optional<Book> actualBook = bookRepositoryJpa.findById(expectedBook.getId());
