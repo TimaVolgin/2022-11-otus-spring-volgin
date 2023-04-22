@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <style>
+        .navbar {
+            background-color: lightgreen;
+        }
+
+        .navbar-brand,
+        a {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <script th:src="@{/webjars/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.min.css}">
+</head>
+<body>
+<nav class="navbar" th:fragment="header">
+    <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="/">Главная</a>
+        <a class="navbar-brand" href="/book/new">Добавить книгу</a>
+        <a class="navbar-brand" href="/author/new">Добавить автора</a>
+        <a class="navbar-brand" href="/genre/new">Добавить жанр</a>
+        <a class="navbar-brand" href="/logout">Выход из библиотеки</a>
+    </div>
+</nav>
+</body>
+</html>
