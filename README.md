@@ -82,3 +82,11 @@ CRUD приложение с Web UI и хранением данных в БД
 Цель: использовать Spring MVC для разработки современных AJAX/SPA приложений c помощью Spring MVC.
 
 Результат: современное приложение на стеке Spring.
+
+## hw_011
+Использовать WebFlux.
+
+#### Цель
+Цель: разрабатывать Responsive и Resilent приложения на реактивном стеке Spring c помощью Spring Web Flux и Reactive Spring Data Repositories.
+
+Результат: приложение на реактивном стеке Spring.
