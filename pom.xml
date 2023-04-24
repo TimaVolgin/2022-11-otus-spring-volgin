@@ -28,6 +28,7 @@
         <module>hw_009</module>
         <module>hw_010</module>
         <module>hw_011</module>
+        <module>hw_012</module>
     </modules>
 
     <properties>

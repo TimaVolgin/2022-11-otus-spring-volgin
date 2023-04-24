@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="blocks/header :: head">
+    <title>Форма комментария</title>
+</head>
+<body>
+    <div th:replace="blocks/header :: header"></div>
+    <div class="container mt-5">
+        <h1>Библиотека</h1>
+        <h3 style="margin-top: 10px">Введите комментарий</h3>
+        <div class="form-group">
+            <form th:object="${comment}" th:action="@{'/book/' + ${bookId} + '/comment'} " method="post" onsubmit="return validateComment()">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" name="text" th:field="*{text}"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mr-2">Подтвердить</button>
+                <button type="button" class="btn btn-secondary" onclick="cancelComment()">Отменить</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateComment() {
+            const commentText = document.getElementById("comment").value.trim();
+            if (commentText === "") {
+                alert("Комментарий не может быть пустым");
+                return false;
+            }
+            return true;
+        }
+
+        function cancelComment() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
