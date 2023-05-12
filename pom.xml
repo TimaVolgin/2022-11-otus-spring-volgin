@@ -30,6 +30,7 @@
         <module>hw_011</module>
         <module>hw_012</module>
         <module>hw_013</module>
+        <module>hw_014</module>
     </modules>
 
     <properties>
