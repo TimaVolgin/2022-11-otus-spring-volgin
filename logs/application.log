@@ -1,0 +1,77 @@
+2023-мая-17 23:37:51.269 INFO  [main] r.o.s.LibraryApplication016 - Starting LibraryApplication016 using Java 11.0.2 on DESKTOP-JKPT4N5 with PID 22492 (C:\TimVolgin\OTUS\HOMEWORK\2022-11-otus-spring-volgin\hw_016\target\classes started by Dell in C:\TimVolgin\OTUS\HOMEWORK\2022-11-otus-spring-volgin)
+2023-мая-17 23:37:51.273 INFO  [main] r.o.s.LibraryApplication016 - No active profile set, falling back to 1 default profile: "default"
+2023-мая-17 23:37:52.373 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-мая-17 23:37:52.454 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 5 JPA repository interfaces.
+2023-мая-17 23:37:52.944 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-мая-17 23:37:52.953 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-мая-17 23:37:52.954 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-мая-17 23:37:53.087 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-мая-17 23:37:53.088 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1762 ms
+2023-мая-17 23:37:53.405 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2023-мая-17 23:37:53.532 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2023-мая-17 23:37:53.585 INFO  [main] l.database - Set default schema name to PUBLIC
+2023-мая-17 23:37:53.756 INFO  [main] l.lockservice - Successfully acquired change log lock
+2023-мая-17 23:37:54.006 INFO  [main] l.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-мая-17 23:37:54.012 INFO  [main] l.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2023-мая-17 23:37:54.089 INFO  [main] l.changelog - Custom SQL executed
+2023-мая-17 23:37:54.090 INFO  [main] l.changelog - ChangeSet liquibase/v1.0/2023_03_23__create_tables.sql::createTables::VolginT ran successfully in 33ms
+2023-мая-17 23:37:54.128 INFO  [main] l.changelog - Custom SQL executed
+2023-мая-17 23:37:54.129 INFO  [main] l.changelog - ChangeSet liquibase/v1.0/2023_03_23__insert_demo_data.sql::demoData::VolginTA ran successfully in 21ms
+2023-мая-17 23:37:54.132 INFO  [main] l.lockservice - Successfully released change log lock
+2023-мая-17 23:37:54.189 INFO  [main] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-мая-17 23:37:54.237 INFO  [main] o.h.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-мая-17 23:37:54.378 INFO  [main] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-мая-17 23:37:54.491 INFO  [main] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-мая-17 23:37:55.175 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-мая-17 23:37:55.183 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-мая-17 23:37:55.469 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-мая-17 23:37:55.690 INFO  [main] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bf2e475, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e75bae7, org.springframework.security.web.context.SecurityContextPersistenceFilter@29088d3d, org.springframework.security.web.header.HeaderWriterFilter@6600d07d, org.springframework.security.web.csrf.CsrfFilter@3e7da4cb, org.springframework.security.web.authentication.logout.LogoutFilter@6e6bd43b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2709e075, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@923bf67, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3531509c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5390862e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@489c15e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23169374, org.springframework.security.web.session.SessionManagementFilter@439b0198, org.springframework.security.web.access.ExceptionTranslationFilter@2f408960, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@189f3ccd]
+2023-мая-17 23:37:55.813 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-мая-17 23:37:55.835 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-мая-17 23:37:55.874 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2023-мая-17 23:37:55.892 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-мая-17 23:37:55.904 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-мая-17 23:37:56.185 INFO  [main] o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-мая-17 23:37:56.232 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-мая-17 23:37:56.247 INFO  [main] r.o.s.LibraryApplication016 - Started LibraryApplication016 in 5.587 seconds (JVM running for 6.899)
+2023-мая-17 23:37:57.226 INFO  [RMI TCP Connection(1)-10.0.75.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-мая-17 23:37:57.228 INFO  [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-мая-17 23:37:57.228 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-мая-17 23:37:57.228 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-мая-17 23:37:57.229 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-мая-17 23:37:57.230 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@359fd0a2
+2023-мая-17 23:37:57.231 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1fd4850b
+2023-мая-17 23:37:57.231 DEBUG [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-мая-17 23:37:57.231 INFO  [RMI TCP Connection(1)-10.0.75.1] o.s.w.s.DispatcherServlet - Completed initialization in 3 ms
+2023-мая-17 23:38:16.745 WARN  [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [526] milliseconds.
+2023-мая-17 23:38:21.715 DEBUG [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet - GET "/actuator", parameters={}
+2023-мая-17 23:38:21.746 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:21.748 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@4003f995 href = 'http://localhost:8080/actuator'], health=[Link@5ee7546a href =  (truncated)...]
+2023-мая-17 23:38:21.762 DEBUG [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:38:27.325 DEBUG [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet - GET "/actuator", parameters={}
+2023-мая-17 23:38:27.327 DEBUG [http-nio-8080-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:27.327 DEBUG [http-nio-8080-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@66595227 href = 'http://localhost:8080/actuator'], health=[Link@689ea09c href =  (truncated)...]
+2023-мая-17 23:38:27.329 DEBUG [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:38:29.758 DEBUG [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet - GET "/actuator", parameters={}
+2023-мая-17 23:38:29.762 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:29.763 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@524c453b href = 'http://localhost:8080/actuator'], health=[Link@5c8ba102 href =  (truncated)...]
+2023-мая-17 23:38:29.765 DEBUG [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:38:31.812 DEBUG [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet - GET "/actuator", parameters={}
+2023-мая-17 23:38:31.814 DEBUG [http-nio-8080-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:31.815 DEBUG [http-nio-8080-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@4c2fffd1 href = 'http://localhost:8080/actuator'], health=[Link@42e81824 href =  (truncated)...]
+2023-мая-17 23:38:31.816 DEBUG [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:38:37.042 DEBUG [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet - GET "/actuator/health", parameters={}
+2023-мая-17 23:38:37.060 DEBUG [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:37.061 DEBUG [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.springframework.boot.actuate.health.SystemHealth@1baf4d35]
+2023-мая-17 23:38:37.063 DEBUG [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:38:38.032 DEBUG [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet - GET "/actuator/health", parameters={}
+2023-мая-17 23:38:38.037 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2023-мая-17 23:38:38.038 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.springframework.boot.actuate.health.SystemHealth@628adf72]
+2023-мая-17 23:38:38.039 DEBUG [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet - Completed 503 SERVICE_UNAVAILABLE
+2023-мая-17 23:39:05.803 DEBUG [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet - GET "/actuator/logfile", parameters={}
+2023-мая-17 23:39:05.807 DEBUG [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain;charset=UTF-8;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain;charset=UTF-8]
+2023-мая-17 23:39:05.807 DEBUG [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [file [C:\TimVolgin\OTUS\HOMEWORK\2022-11-otus-spring-volgin\.\logs\application.log]]
+2023-мая-17 23:39:05.818 DEBUG [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet - Completed 200 OK
+2023-мая-17 23:42:14.313 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-мая-17 23:42:14.317 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-мая-17 23:42:14.322 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
