@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  library:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: volginta/library
+    container_name: library
+    restart: always
+    privileged: true
+    depends_on:
+      - library-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://library-db:5433/library
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    ports:
+      - "8080:8081"
+
+  library-db:
+    image: postgres:13.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: library
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

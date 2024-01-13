@@ -34,6 +34,7 @@
         <module>hw_015</module>
         <module>hw_016</module>
         <module>hw_017</module>
+        <module>hw_018</module>
     </modules>
 
     <properties>
